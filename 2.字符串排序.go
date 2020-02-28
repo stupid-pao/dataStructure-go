@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func main2() {
 	//比较字符串
 	fmt.Println(strings.Compare("b", "c"))
 	fmt.Println(strings.Compare("c", "b"))
