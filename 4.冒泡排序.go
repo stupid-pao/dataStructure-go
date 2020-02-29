@@ -8,11 +8,17 @@ func BubbleSort(arr []int) []int {
 		return arr
 	} else {
 		for i := 0; i < length-1; i++ {
+			needExchange := false
 			for j := 0; j < length-i-1; j++ {
 				if arr[j] > arr[j+1] {
 					arr[j], arr[j+1] = arr[j+1], arr[j]
+					needExchange = true
 				}
 			}
+			if !needExchange {
+				break
+			}
+			//fmt.Println(arr) //通过这个发现第四次循环就已经完成排序 所以优化增加 needExchange
 		}
 	}
 	return arr
