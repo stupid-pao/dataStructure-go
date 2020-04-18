@@ -31,7 +31,7 @@ func QuickSort(arr []int) []int {
 
 }
 
-func main() {
+func main6() {
 	arr := []int{0, 1, 9, 2, 8, 3, 7, 4, 6, 5, 10}
 	fmt.Println(QuickSort(arr))
 
