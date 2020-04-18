@@ -37,9 +37,12 @@ func merge(leftarr []int, rightarr []int) []int {
 // 不停的分组，最后左右比，按大小排好
 func MergeSort(arr []int) []int {
 	length := len(arr)
-	if length <= 1 {
+	switch {
+	case length <= 1:
 		return arr
-	} else {
+	case length > 1 && length <= 5:
+		return InsertSort(arr)
+	default:
 		mid := length / 2
 		leftarr := MergeSort(arr[:mid])
 		rightarr := MergeSort(arr[mid:])
