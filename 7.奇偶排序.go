@@ -30,7 +30,7 @@ func OddEven(arr []int) []int {
 	return arr
 }
 
-func main() {
+func main7() {
 	arr := []int{0, 1, 9, 2, 8, 3, 7, 4, 6, 5, 10}
 	fmt.Println(OddEven(arr))
 
