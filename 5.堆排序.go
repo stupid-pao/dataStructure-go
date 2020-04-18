@@ -85,7 +85,7 @@ func swap(arr []int, i, j int) {
 	arr[i], arr[j] = arr[j], arr[i]
 }
 
-func main() {
+func main5() {
 	arr := []int{0, 1, 9, 2, 8, 3, 7, 4, 6, 5, 10}
 	// total := len(arr) - 1
 	//heapAdjust(arr, total/2, total)
